@@ -26,12 +26,12 @@ export class AppComponent {
   }
 
   updatePost():void{
-  console.log(this.resultsR);
-   for(let i =0; i < 10; i++){
+  
+   for(let i =1; i < 10; i++){
     this.posts.push(
       {title: this.resultsR[0].data.children[i].data.title, url: this.resultsR[0].data.children[i].data.url, thumbnail: this.resultsR[0].data.children[i].data.thumbnail });
 
-   };
+   }
     
   }
 

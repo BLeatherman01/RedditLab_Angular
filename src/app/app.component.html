@@ -1,10 +1,26 @@
+<!DOCTYPE html>
 
-<button (click)="searchReddit()">Search Post</button>
-<p>{{resultsR}}</p>
-<ul>
-  <li *ngFor="let p of posts, index as i">
-    <p>Title: {{p.title}}</p>
-    <a href="{{p.url}}">Post</a>
-    <img src="{{p.thumbnail}}">
-  </li>
-</ul>
+<Html>
+
+<body>
+
+  <h1>Search Subreddit /aww</h1>
+
+  <button class="button" (click)="searchReddit()">Search for Reddit Post</button>
+
+  <p>{{resultsR}}</p>
+
+  <ul>
+
+    <li *ngFor="let p of posts, index as i">
+      <p>Title: {{p.title}}</p>
+      <a href="{{p.url}}">Post</a>
+      <img src="{{p.thumbnail}}">
+
+    </li>
+
+  </ul>
+
+</body>
+
+</Html>
